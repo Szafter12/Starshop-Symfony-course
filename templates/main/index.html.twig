@@ -3,6 +3,11 @@
 {% block title %}Starshop: Beam up some parts! {% endblock %}
 
 {% block body %}
-<h1>Hello world</h1>
-<p>Starship count: {{ starshipCount }}</p>
+    <h1>Starshop: your monopoly-busting option for Starship parts!</h1>
+    <p>Browse through {{ starships|length * 10 }} starships!</p>
+    <h2>My ship:</h2>
+    <p>Name: {{ myStarship.name }}</p>
+    <p>Class: {{ myStarship.class }}</p>
+    <p>Captain: {{ myStarship.captain }}</p>
+    <p>Status: {{ myStarship.status }}</p>  
 {% endblock %}
