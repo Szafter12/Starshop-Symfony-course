@@ -6,8 +6,13 @@
     <h1>Starshop: your monopoly-busting option for Starship parts!</h1>
     <p>Browse through {{ starships|length * 10 }} starships!</p>
     <h2>My ship:</h2>
-    <p>Name: {{ myStarship.name }}</p>
+    <p>
+        Name:
+        <a href="{{ path('app_starship_show', {id: myStarship.id}) }}">
+            {{ myStarship.name }}
+        </a>
+    </p>
     <p>Class: {{ myStarship.class }}</p>
     <p>Captain: {{ myStarship.captain }}</p>
-    <p>Status: {{ myStarship.status }}</p>  
+    <p>Status: {{ myStarship.status }}</p>
 {% endblock %}

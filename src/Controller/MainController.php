@@ -20,7 +20,7 @@ class MainController extends AbstractController
 
         return $this->render('main/index.html.twig', [
             'myStarship' => $myStarship,
-            'starships' => $starships
+            'starships' => $starships,
         ]);
     }
 }
