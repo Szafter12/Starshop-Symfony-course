@@ -21,7 +21,7 @@ class StarshipController extends AbstractController
         }
 
         return $this->render('starship/show.html.twig', [
-            'ship' => $ship,
+            'myShip' => $ship,
         ]);
     }
 }
